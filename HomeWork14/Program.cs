@@ -26,7 +26,7 @@ namespace HomeWork14
                 new Person(){ Id = 10, Name = "Evgeniy", Age = 23},
             };
 
-           var _list2 =  list2.Top<Person, List<Person>,int>(30,i=>i.Age);
+           var _list2 =  list2.Top<Person, List<Person>>(30,i=>i.Age);
             _list2.ForEach(p=> Console.WriteLine(String.Join("\r\n",$"ID : {p.Id}, name: {p.Name}, age: {p.Age}")));
 
         }
